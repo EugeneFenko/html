@@ -1,0 +1,147 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,500,700');
+/*font-family: 'Raleway', sans-serif;*/
+
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*COLORS*/
+.orange {
+    color: #e44d26;
+}
+
+.blue {
+    color: #379ad6;
+}
+
+.yellow {
+    color: #f3db2d;
+}
+
+.blue_2 {
+    color: #00d8ff;
+}
+
+/*1.Header*/
+header {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: #888 url("../img/bg.jpeg") no-repeat center center;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+.menu {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    float: right;
+    margin-top: 8px;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 8px; 
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+
+.menu li a {
+    color: white;
+}
+
+#logo {
+    background: url("../img/logo.png") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+#text_logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#text_logo h3 {
+    font-weight: 100;
+    font-size: 48px;
+    padding: 5px 0;
+}
+
+#text_logo h1 {
+    font-weight: bold;
+    font-size: 54px;
+    padding: 5px 0;
+}
+
+#text_logo button {
+    font-weight: normal;
+    border: none;
+    background-color: orange;
+    font-size: 24px;
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+}
+
+/*2.skill_box*/
+.skill_block {
+    background-color: white;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill_box {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border: 3px solid;
+    justify-content: center;
+    margin: 25px 0;
+    flex-direction: column;
+    border-radius: 100%;
+}
+
+.skill_box span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/*3.Content*/
+article {
+    text-align: center;
+}
+/*4.Footer*/
+footer {
+    text-align: center;
+    font-size: 24px;
+    color: gray;
+}
+
+
+
+
