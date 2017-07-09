@@ -2,53 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GeekFen - premium HTML theme!</title>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    </head>
 <body>
 
     <mian id="wrapper">
         <header>
-            <nav>
-                <div id="logo">
-                    <a href="#"></a>
-                </div>
-                <ul class="menu">
-                    
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Skill</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Partner</a></li>
-                    <li><a href="">Contact</a></li>
-                    
-                </ul>
-            </nav>
-            <div id="text_logo">
+          
+            <div id="text_logo" class="align-middle">
                 <h3>Premium HTML theme</h3>
                 <h1>GeekFen</h1>
-                <button type="button">GET NOW!</button> 
+               <a href="#about"><button type="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> GET NOW!</button></a>
             </div>
-  
         </header>
+<!--Navigation-->
+       <nav class="navbar navbar-toggleable-md navbar-light sticky-top bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="30px" height="30px">
+            </a>
 
-        <aside class="skill_block">
-            <div class="skill_box orange"><span>HTML5</span></div>
-            <div class="skill_box blue"><span>CSS3</CSS3span></div>
-            <div class="skill_box yellow"><span>JS</span></div>
-            <div class="skill_box blue_2"><span>ReactJs</span></div> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#wrapper">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me<span class="sr-only"></span></a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#skill">My Skill<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partner">Our Partner<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hire Me<span class="sr-only"></span></a>
+                </li>    
+                </ul>
+            </div>
+        </nav>
+
+<!--/Navigation-->
+
+        <article class="container" id="about">
+            <div class="about_container row">
+                    <h1 class="box_title col-12 center">About Me</h1>
+               
+                    <div class="about_img col-xs-12 col-md-4 ">
+                        <img src="./img/banner.png" alt="geek">
+                    </div>
+                    <div class="about_text col-xs-12 col ">
+                        <h2>Geek Fen</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit debitis veniam aliquid, repudiandae cupiditate maxime minus deleniti eos distinctio.</p>
+                    </div>
+                    <div class="col-12 box container" id="contact">
+                        <div class="row plus_box_fix">
+                            <div class="col-12">
+                                <h1 class="box_title center">Contact Me</h1>
+                            </div>
+                            <div class="col contact plus_box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                            <div class="col contact plus_box"><i class="fa fa-github" aria-hidden="true"></i></div>
+                            <div class="col contact plus_box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                            <div class="col contact plus_box"><i class="fa fa-skype" aria-hidden="true"></i></div>
+                         
+                        </div>
+                    </div>               
+            </div>
+        </article>
+
+        <aside class="skill_block container-fluid" id="skill"> 
+                <div class="row">
+                    <div class="col-12 center"><h1 class="box_title">My Skill</h1></div> 
+                    <div class="col skill_box orange"><span>HTML5</span></div>
+                    <div class="col skill_box blue"><span>CSS3</CSS3span></div>
+                    <div class="col skill_box yellow"><span>JS</span></div>
+                    <div class="col skill_box blue_2"><span>ReactJs</span></div> 
+            
+                    </div>
+                </div>
+               
         </aside>
 
-        <article>
-            <!--Main content-->
+        <article class="container box portfolio" id="portfolio">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="center box_title">Portfolio</h1>
+                </div>
+                <div class="col-6 col-lg-4 box-item"></div>
+                <div class="col-6 col-lg-4 box-item"></div>
+                <div class="col-6 col-lg-4 box-item"></div>
+                <div class="col-6 col-lg-4 box-item"></div>
+                <div class="col-6 col-lg-4 box-item"></div>
+                <div class="col-6 col-lg-4 box-item"></div>
+            </div>
+        </article>
+
+        <article class="container" id="partner">
+            <div class="row plus_box_fix">
+                <div class="col-12">
+                    <h1 class="box_title center">Our partners</h1>
+                </div>
+                <div class="col partner plus_box "><i class="fa fa-google" aria-hidden="true"></i></div>
+                <div class="col partner plus_box"><i class="fa fa-google-wallet" aria-hidden="true"></i></div>
+                <div class="col partner plus_box"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                <div class="col partner plus_box"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                <div class="col partner plus_box"><i class="fa fa-vk" aria-hidden="true"></i></div>
+            </div>
         </article>
 
         <footer>
-            Coming soon..
+            <span>
+                Copyright@2017
+            </span>
         </footer>
     </mian>
-    
-</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
 </html>

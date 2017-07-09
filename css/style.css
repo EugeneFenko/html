@@ -2,13 +2,43 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,500,700');
 /*font-family: 'Raleway', sans-serif;*/
 
-/*Reset*/
+/*1.Reset*/
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }
+
+.center {
+    text-align: center;
+}
+
+a, a:hover, a:link {
+    text-decoration: none !important;
+    text-decoration-line: none;
+}
+
+
+.box_title {
+    margin: 30px 0;
+}
+
+.box_title::after {
+    content: "_";
+    width: 50px;
+    color: orangered;
+}
+
+.plus_box {
+    text-align: center;
+    border-right: 1px dashed #999;
+}
+
+.plus_box_fix div:last-child{
+    border-right: none;
+}
+
 
 /*COLORS*/
 .orange {
@@ -27,59 +57,25 @@
     color: #00d8ff;
 }
 
-/*1.Header*/
+/*2.Header*/
 header {
     height: 100vh;
     color: white;
-    display: flex;
+    display: flex !important;
     justify-content: center;
-    background: #888 url("../img/bg.jpeg") no-repeat center center;
-}
-
-nav {
-    position: absolute;
-    top: 20px;
-    height: 40px;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
-}
-
-.menu {
-    list-style-type: none;
-    display: inline-block;
-    color: white;
-    float: right;
-    margin-top: 8px;
-}
-
-.menu li {
-    display: inline-block;
-    font-size: 20px;
-    margin-right: 8px; 
-}
-
-.menu li:last-child{
-    margin-right: 0;
-}
-
-.menu li a {
-    color: white;
-}
-
-#logo {
-    background: url("../img/logo.png") no-repeat;
+    background: #888 url("../img/bg1.jpeg") no-repeat top;
     background-size: cover;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
+    /*background-attachment: fixed;*/
 }
+
+
 
 #text_logo {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -105,12 +101,59 @@ nav {
     color: white;
 }
 
-/*2.skill_box*/
+
+
+
+/*3.Content*/
+
+/*3.1.AboutMe*/
+
+.about_container {
+    display: flex;
+    padding: 30px 20px;
+    min-height: 80px;
+}
+
+.about_text {
+    
+}
+
+.about_text > h2 {
+    font-size: 36px;
+    padding: 0 0 10px 0;
+}
+
+.about_text > p {
+    font-size: 22px;
+    font-variant: small-caps;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.about_img > img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/*3.2.ContactMe*/
+.contact {
+    font-size: 42px;    
+}
+
+
+
+/*3.3.SkillBox*/
 .skill_block {
-    background-color: white;
-    height: 200px;
+    background: #fff url("../img/skill1.jpeg") bottom no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    padding: 50px 0;
     display: flex;
     justify-content: space-around;
+    column-count: 2;
+
 }
 
 .skill_box {
@@ -119,9 +162,10 @@ nav {
     width: 150px;
     border: 3px solid;
     justify-content: center;
-    margin: 25px 0;
+    margin: 25px;
     flex-direction: column;
     border-radius: 100%;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
 }
 
 .skill_box span {
@@ -130,17 +174,65 @@ nav {
     font-size: 24px;
 }
 
-
-/*3.Content*/
-article {
-    text-align: center;
+/*3.4.Portfolio*/
+.box {
+    padding: 50px 0;
 }
+.box-item {
+    float: left;
+    position: relative;
+    max-width: 30% !important;
+    padding-bottom: 30%;
+    margin: 1.66%;
+    background: #888 url("../img/placeholder1.jpg") no-repeat center left ;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.box-item:hover{
+    filter: brightness(0.5);
+}
+
+/*3.5.Partner*/
+.partner {
+    font-size: 70px;
+}
+
 /*4.Footer*/
 footer {
-    text-align: center;
     font-size: 24px;
-    color: gray;
+    color: white;
+    background: #111;
+    height: 70px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
 }
+
+
+/*RESPONSIVE*/
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+ }
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+
+ }
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
+
+ }
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+
+ }
 
 
 
