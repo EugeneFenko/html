@@ -115,7 +115,9 @@ header {
 }
 
 .about_text {
-    
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about_text > h2 {
