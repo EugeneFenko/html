@@ -8,7 +8,9 @@
     margin: 0;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    z-index: 10;
 }
+
 
 .center {
     text-align: center;
@@ -65,7 +67,6 @@ header {
     justify-content: center;
     background: #888 url("../img/bg-min.jpeg") no-repeat top;
     background-size: cover;
-    /*background-attachment: fixed;*/
 }
 
 
@@ -139,7 +140,6 @@ header {
 }
 
 
-
 /*3.3.SkillBox*/
 .skill_block {
     background: #fff url("../img/skill.jpeg") bottom no-repeat;
@@ -153,23 +153,20 @@ header {
 
 }
 
-.skill_box {
-    display: flex;
-    height: 150px;
-    width: 150px;
-    border: 3px solid;
-    justify-content: center;
-    margin: 25px;
-    flex-direction: column;
-    border-radius: 100%;
-    /*background-color: rgba(0, 0, 0, 0.3);*/
+.owl-list{
+    width: 96vw;
+    margin: 0 auto;
 }
 
-.skill_box span {
+.skill-owl {
     text-align: center;
-    font-weight: bold;
-    font-size: 24px;
+    font-size: 5rem;
 }
+
+.owl-item {
+    text-align: center;
+}
+
 
 /*3.4.Portfolio*/
 .box {

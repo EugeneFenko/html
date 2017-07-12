@@ -1,5 +1,30 @@
 $(document).ready(function(){
 
+	$('.owl-carousel').owlCarousel({
+		loop:true,
+    margin:0,
+		dots:false,
+    responsive:{
+        0:{
+            items:2,
+						
+					
+        },
+        600:{
+            items:4,
+						
+						// mergeFit:true
+        },
+        1000:{
+            items:8,
+						
+						// mergeFit:true
+        }
+    }
+})
+
+
+
 	//material contact form
 	$('.contact-form').find('.form-control').each(function() {
 	  var targetItem = $(this).parent();
@@ -28,3 +53,4 @@ $(document).ready(function(){
 	})
 	
 });
+
