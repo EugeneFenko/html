@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	// OwlCarousel
 	$('.owl-carousel').owlCarousel({
 		loop:true,
     margin:0,
@@ -16,7 +17,7 @@ $(document).ready(function(){
 						// mergeFit:true
         },
         1000:{
-            items:8,
+            items:5,
 						
 						// mergeFit:true
         }
@@ -25,7 +26,7 @@ $(document).ready(function(){
 
 
 
-	//material contact form
+	//Contact form
 	$('.contact-form').find('.form-control').each(function() {
 	  var targetItem = $(this).parent();
 	  if ($(this).val()) {
@@ -51,6 +52,57 @@ $(document).ready(function(){
 		}, 300);
 	  }
 	})
+
+
+	// Scroll
+	$('.goto').click( function(){ // ловим клик по ссылке с классом go_to
+	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+        }
+	    return false; // выключаем стандартное действие
+		})
 	
 });
 
+
+//ActiveMenu
+var menu_selector = ".navbar-nav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
+ 
+function onScroll(){
+    var scroll_top = $(document).scrollTop();
+    $(menu_selector + " a").each(function(){
+        var hash = $(this).attr("href");
+        var target = $(hash);
+        if (target.position().top-1 <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+            $(menu_selector + " a.active").removeClass("active");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+}
+ 
+$(document).ready(function () {
+ 
+    $(document).on("scroll", onScroll);
+ 
+    $("a[href^=#]").click(function(e){
+        e.preventDefault();
+ 
+        $(document).off("scroll");
+        $(menu_selector + " a.active").removeClass("active");
+        $(this).addClass("active");
+        var hash = $(this).attr("href");
+        var target = $(hash);
+ 
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 500, function(){
+            window.location.hash = hash;
+            $(document).on("scroll", onScroll);
+        });
+ 
+    });
+ 
+});

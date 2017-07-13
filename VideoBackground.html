@@ -7,7 +7,9 @@
     <title>GeekFen - premium HTML theme!</title>
     <link href="favicon.svg" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ytube.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
@@ -19,11 +21,12 @@
 
         <header>
           
-            <div class="video-background">
-                <div class="video-foreground">
-                    <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ&start=0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" allowfullscreen></iframe>
+             <div id="video-bg">
+                <video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop" poster="">
+                <source src="" type="video/mp4"></source>
+                 <source src="video/bg.webm" type="video/webm"></source>
+                 </video>
                 </div>
-            </div>
 
             <div id="text_logo" class="align-middle">
                 <h3>Premium HTML theme</h3>
@@ -103,16 +106,25 @@
 <!--/About-->
 
 <!--Skill-->
-        <aside class="skill_block container-fluid" id="skill"> 
+         <aside class="skill_block container-fluid" id="skill"> 
                 <div class="row">
-                    <div class="col-12 center"><h1 class="box_title">My Skills</h1></div> 
-                    <div class="col skill_box orange"><span>HTML5</span></div>
-                    <div class="col skill_box blue"><span>CSS3</CSS3span></div>
-                    <div class="col skill_box yellow"><span>JS</span></div>
-                    <div class="col skill_box blue_2"><span>ReactJs</span></div> 
-            
-                    </div>
-                </div>
+                    <div class="col-12 center"><h1 class="box_title">My Skills</h1></div>  
+                    <div class="owl-list">
+                       <div class="owl-carousel owl-theme owl-loaded">
+    
+                        <span class="skill-owl item"><i class="fa fa-html5" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-css3" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-git" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-joomla" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-wordpress" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+                        <span class="skill-owl item"><i class="fa fa-language" aria-hidden="true"></i></span>
+                    </div>   
+                    </div> 
+                    
+                </div> 
                
         </aside>
 <!--/Skill-->
@@ -278,6 +290,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
   </body>
 </html>
