@@ -74,7 +74,7 @@ function onScroll(){
     $(menu_selector + " a").each(function(){
         var hash = $(this).attr("href");
         var target = $(hash);
-        if (target.position().top-1 <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+        if (target.position().top-100 <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
             $(menu_selector + " a.active").removeClass("active");
             $(this).addClass("active");
         } else {

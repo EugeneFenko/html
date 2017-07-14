@@ -104,6 +104,7 @@ header {
 
 .navbar-nav a.active {
     font-weight: 700;
+    border-bottom: 2px solid orange;
 }
 
 .navbar-nav a:hover {
@@ -192,17 +193,50 @@ header {
 
 .box-text {
     position: absolute;
-    top:0;
+    top:40%;
     bottom: 0;
     left: 0;
     right: 0;
     display: none;
-    background: rgba(0, 0, 0, 1);
-    color: white !important;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.box-text p {
+    color: #9e9e9e;
 }
 
 .box-item:hover .box-text{
     display: block;
+}
+
+@media (min-width: 1200px) {
+    .box-text {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 991px) {
+  .box-text h1 {
+        line-height: 300%;
+        font-size: larger;
+  }
+    .box-text p {
+        display: none;
+    } 
+}
+
+@media (max-width: 425px) {
+
+  .box-text {
+    top:0;
+    }
+
+    .box-text h1 {
+        line-height: 300%;
+        font-size: larger;
+        padding-top: 25%;
+  }
 }
 
 /*3.5.Partner*/
