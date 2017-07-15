@@ -140,6 +140,7 @@ header {
 .about_text > h2 {
     font-size: 36px;
     padding: 0 0 10px 0;
+    text-align: left;
 }
 
 .about_text > p {
@@ -260,9 +261,8 @@ header {
 
 /*3.6.Timeline*/
 .timeline_box {
-    background: #ccc url("../img/timeline.jpeg") no-repeat center center;
+    background: #ccc url("../img/timeline.png") repeat center center;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 .timeline-panel {
@@ -408,6 +408,11 @@ header {
     background-color: #00BCD4 !important;
 }
 
+.timeline-body {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
 .timeline-title {
     margin-top: 0;
     color: inherit;
@@ -422,7 +427,18 @@ header {
         margin-top: 5px;
     }
 
+@media (max-width: 475px) {
+    .box-text h3 {
+        font-size: 1rem;
+        margin-top: 40% !important;
+    }
+}    
+
 @media (max-width: 767px) {
+    .box-text h3 {
+        margin-top: 15%;
+    }
+
     ul.timeline:before {
         left: 40px;
     }
@@ -462,6 +478,10 @@ header {
 .hire {
     padding: 50px;
     border-left: 1px dotted #999;
+}
+
+.hire img {
+    width: 70%;
 }
 
 .hire_fix div:first-child {

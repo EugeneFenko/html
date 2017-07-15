@@ -1,0 +1,35 @@
+#p-1 {
+    background-image: url("../portfolio/man-coffee-cup-pen.jpg");
+    background-size: cover;
+    /* background-position: center; */
+}
+
+#p-2 {
+    background: url("../portfolio/pexels-photo-230544.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#p-3 {
+    background: url("../portfolio/pexels-photo-492134.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#p-4 {
+    background: url("../portfolio/pexels-photo-67112.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#p-5 {
+    background: url("../portfolio/pexels-photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#p-6 {
+    background: url("../portfolio/pexels-photo-122400.jpeg");
+    background-size: cover;
+    /* background-position: center; */
+}
