@@ -150,6 +150,11 @@ header {
     text-align: justify;
 }
 
+.about_img img {
+    width: 100%;
+    
+}
+
 /*3.2.ContactMe*/
 .contact {
     font-size: 42px;    
