@@ -35,17 +35,16 @@
 
 </head>
 
-<body>
 
 <!-- Main template block -->
-    <mian id="wrapper">
+<mian id="wrapper">
 
 <!-- Header  -->
         <header id="header">
             <div id="text_logo" class="align-middle">
                 <h3>Premium HTML theme</h3>
                 <h1>GeekFen</h1>
-               <a class="goto" href="#about"><button type="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> GET NOW!</button></a>
+               <a class="goto" href="#about"><div><i class="fa fa-cloud-download" aria-hidden="true"></i> GET NOW!</div></a>
             </div>
         </header>
 <!-- /Header  -->
@@ -97,7 +96,7 @@
 <!--About-->
         <article class="container" id="about">
             <div class="about_container row">
-                    <h1 class="box_title col-12 center">About Me</h1>
+                    <h2 class="box_title col-12 center">About Me</h2>
                
                     <div class="about_img col-xs-12 col-md-4 center">
                          <img src="./img/banner.svg" width="100%" alt="geek"> <!-- your photo -->
@@ -115,7 +114,7 @@
 <!--Skill-->
         <aside class="skill_block container-fluid" id="skill"> 
                 <div class="row">
-                    <div class="col-12 center"><h1 class="box_title">My Skills</h1></div>  
+                    <div class="col-12 center"><h2 class="box_title">My Skills</h2></div>  
                     <div class="owl-list">
                        <div class="owl-carousel owl-theme owl-loaded">
     
@@ -142,7 +141,7 @@
         <article class="container box portfolio" id="portfolio">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="center box_title">Portfolio</h1>
+                    <h2 class="center box_title">Portfolio</h2>
                 </div>
                 <div class="col-6 col-lg-4 box-item">
                     <div class="box-text">
@@ -188,7 +187,7 @@
         <article class="container box" id="partner">
             <div class="row plus_box_fix">
                 <div class="col-12">
-                    <h1 class="box_title center">Our partners</h1>
+                    <h2 class="box_title center">Our partners</h2>
                 </div>
                 <div class="col partner plus_box "><i class="fa fa-google" aria-hidden="true"></i></div>
                 <div class="col partner plus_box"><i class="fa fa-google-wallet" aria-hidden="true"></i></div>
@@ -205,7 +204,7 @@
 
             
             <div class="page-header">
-                <h1 class="box_title center">Timeline</h1>
+                <h2 class="box_title center">Timeline</h2>
             </div>
             <ul class="timeline">
                 <li>
@@ -263,7 +262,7 @@
 
 <!--HireMe-->
     <div class="container box" id="hire">
-        <h1 class="box_title center">HireMe</h1>
+        <h2 class="box_title center">HireMe</h2>
         <div class="row hire_fix">
             <div class="col-12 col-sm-6 hire center">
                 <a href="#"><img src="img/upwork-logo.svg" alt=""></a> <!-- image  -->
@@ -279,7 +278,7 @@
     <div class="col-12 box container" id="contact">
         <div class="row plus_box_fix">
             <div class="col-12">
-                <h1 class="box_title center">Contact Me</h1>
+                <h2 class="box_title center">Contact Me</h2>
             </div>
             <div class="col contact plus_box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
             <div class="col contact plus_box"><i class="fa fa-github" aria-hidden="true"></i></div>
@@ -297,32 +296,32 @@
 				  <form action="" class="contact-form row">
 					<div class="col-6">
 					  <div class="input-block">
-						<label for="">First Name</label>
-						<input type="text" class="form-control">
+						<label for="c_name">First Name</label>
+						<input id="c_name" type="text" class="form-control">
 					  </div>
 					</div>
 					<div class="col-6">
 					  <div class="input-block">
-						<label for="">Last Name</label>
-						<input type="text" class="form-control">
+						<label for="c_lname">Last Name</label>
+						<input id="c_lname" type="text" class="form-control">
 					  </div>
 					</div>
 					<div class="col-sm-12">
 					  <div class="input-block">
-						<label for="">Email</label>
-						<input type="text" class="form-control">
+						<label for="email">Email</label>
+						<input id="email" type="text" class="form-control">
 					  </div>
 					</div>
 					<div class="col-sm-12">
 					  <div class="input-block">
-						<label for="">Message Subject</label>
-						<input type="text" class="form-control">
+						<label for="c_msg_title">Message Subject</label>
+						<input id="c_msg_title" type="text" class="form-control">
 					  </div>
 					</div>
 					<div class="col-sm-12">
 					  <div class="input-block textarea">
-						<label for="">Drop your message here</label>
-						<textarea rows="3" type="text" class="form-control"></textarea>
+						<label for="msg">Drop your message here</label>
+						<textarea id="msg" rows="3" type="text" class="form-control"></textarea>
 					  </div>
 					</div>
 					<div class="col-sm-12">
@@ -346,7 +345,7 @@
 <!--/Footer-->
 
 
-    </mian>
+</mian>
 <!-- /Main template block -->
 
 
@@ -365,5 +364,4 @@
 <script src="js/custom.js"></script>
 
 
-  </body>
 </html>

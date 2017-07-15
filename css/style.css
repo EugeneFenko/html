@@ -92,7 +92,7 @@ header {
     padding: 5px 0;
 }
 
-#text_logo button {
+#text_logo div {
     font-weight: normal;
     border: none;
     background-color: orange;
