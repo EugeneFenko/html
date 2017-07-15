@@ -152,7 +152,7 @@ header {
 
 .about_img img {
     width: 100%;
-    
+
 }
 
 /*3.2.ContactMe*/
@@ -546,9 +546,7 @@ textarea {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.contact-form .input-block.focus {
-  
-}
+
 .contact-form .input-block.textarea {
   height: auto;
 }
