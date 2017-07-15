@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GeekFen - premium HTML theme!</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come after these tags -->
+
+    <!-- Fill in the following meta tags -->
+    <meta name="keywords" content="keyword1, keyword2, keyword3"/>
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+
+    <!-- Change the site title -->
+    <title>GeekFen | Premium HTML Template</title>
+
+    <!-- You can regenerate the favicons as you wish using http://realfavicongenerator.net/ -->
     <link href="favicon.svg" rel="shortcut icon" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Styling for this template -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/video.css">
+    
+    <!-- OwlCarousel -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    </head>
-<body>
 
-    <mian id="wrapper">
+    <!-- Bootstrap v4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-       
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-        <header>
+</head>
+
+<!-- Main template block -->
+<mian id="wrapper">
+
+<!-- Header -->
+         <header id="header">
           
-             <div id="video-bg">
-                <video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop" poster="">
-                <source src="" type="video/mp4"></source>
-                 <source src="video/bg.webm" type="video/webm"></source>
-                 </video>
-                </div>
+            <div id="video-bg">
+                <video  preload="auto" autoplay="autoplay" loop="loop" poster="">
+                    <source src="" type="video/mp4"></source>
+                    <source src="video/bg.webm" type="video/webm"></source>
+                </video>
+            </div>
 
             <div id="text_logo" class="align-middle">
                 <h3>Premium HTML theme</h3>
@@ -34,46 +55,51 @@
                <a href="#about"><button type="button"><i class="fa fa-cloud-download" aria-hidden="true"></i> GET NOW!</button></a>
             </div>
         </header>
+<!-- /Header -->
+
+
 <!--Navigation-->
        <nav class="navbar navbar-toggleable-md navbar-light sticky-top bg-faded">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">
-                <img src="favicon.svg" alt="Logo" width="30px" height="30px">
-            </a>
+            <div class="navbar-brand">
+                 <img src="favicon.svg" alt="Logo" width="30px" height="30px"><!--mini logo image --> 
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#wrapper">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link goto" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me <span class="sr-only"></span></a>
+                    <a class="nav-link goto"  href="#about">About Me <span class="sr-only"></span></a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link goto" href="#skill">My Skills<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Me<span class="sr-only"></span></a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="#skill">My Skill<span class="sr-only"></span></a>
+                    <a class="nav-link goto" href="#portfolio">Portfolio<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio<span class="sr-only"></span></a>
+                    <a class="nav-link goto" href="#partner">Our Partner<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#partner">Our Partner<span class="sr-only"></span></a>
+                    <a class="nav-link goto" href="#timeline">Timeline<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#timeline">Timeline<span class="sr-only"></span></a>
-                </li>
+                    <a class="nav-link goto" href="#hire">Hire Me<span class="sr-only"></span></a>
+                </li>  
                 <li class="nav-item">
-                    <a class="nav-link" href="#hire">Hire Me<span class="sr-only"></span></a>
+                    <a class="nav-link goto" href="#contact">Contact Me<span class="sr-only"></span></a>
                 </li>    
                 </ul>
             </div>
         </nav>
-
 <!--/Navigation-->
+
+
 
 <!--About-->
         <article class="container" id="about">
@@ -81,32 +107,20 @@
                     <h1 class="box_title col-12 center">About Me</h1>
                
                     <div class="about_img col-xs-12 col-md-4 center">
-                        <img src="./img/banner.svg" width="100%" alt="geek">
+                         <img src="./img/banner.svg" width="100%" alt="geek"> <!-- your photo -->
                     </div>
                     <div class="about_text col-xs-12 col box">
                         <h2>Geek Fen</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit debitis veniam aliquid, repudiandae cupiditate maxime minus deleniti eos distinctio.</p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque deserunt impedit atque praesentium necessitatibus, omnis eveniet voluptates explicabo itaque debitis in perferendis aut dolorem aperiam repellendus error possimus illo fuga! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, facilis dolores consequuntur atque nihil commodi earum itaque deleniti, animi beatae, error voluptate ea aliquam illo nam! Corporis iure dolores optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolores voluptatibus ab voluptatem, velit. Enim aliquid, repudiandae sint quidem sunt, expedita nihil? Maxime unde veritatis, reiciendis porro culpa nobis molestias.</p>
                     </div>
-                    <!--Contact-->
-                    <div class="col-12 box container" id="contact">
-                        <div class="row plus_box_fix">
-                            <div class="col-12">
-                                <h1 class="box_title center">Contact Me</h1>
-                            </div>
-                            <div class="col contact plus_box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                            <div class="col contact plus_box"><i class="fa fa-github" aria-hidden="true"></i></div>
-                            <div class="col contact plus_box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                            <div class="col contact plus_box"><i class="fa fa-skype" aria-hidden="true"></i></div>
-                         
-                        </div>
-                    </div> 
-                    <!--/Contact-->
             </div>
         </article>
 <!--/About-->
 
+
+
 <!--Skill-->
-         <aside class="skill_block container-fluid" id="skill"> 
+        <aside class="skill_block container-fluid" id="skill"> 
                 <div class="row">
                     <div class="col-12 center"><h1 class="box_title">My Skills</h1></div>  
                     <div class="owl-list">
@@ -129,18 +143,50 @@
         </aside>
 <!--/Skill-->
 
+
+
 <!--Portfolio-->
         <article class="container box portfolio" id="portfolio">
             <div class="row">
                 <div class="col-12">
                     <h1 class="center box_title">Portfolio</h1>
                 </div>
-                <div class="col-6 col-lg-4 box-item"></div>
-                <div class="col-6 col-lg-4 box-item"></div>
-                <div class="col-6 col-lg-4 box-item"></div>
-                <div class="col-6 col-lg-4 box-item"></div>
-                <div class="col-6 col-lg-4 box-item"></div>
-                <div class="col-6 col-lg-4 box-item"></div>
+                <div class="col-6 col-lg-4 box-item">
+                    <div class="box-text">
+                        <h1>GeekFen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit nulla  recusandae sint quo fuga.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 box-item">
+                    <div class="box-text">
+                        <h1>GeekFen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit nulla  recusandae sint quo fuga.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 box-item">
+                    <div class="box-text">
+                        <h1>GeekFen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit nulla  recusandae sint quo fuga.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 box-item">
+                    <div class="box-text">
+                        <h1>GeekFen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit nulla  recusandae sint quo fuga.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 box-item">
+                    <div class="box-text">
+                        <h1>GeekFen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit nulla  recusandae sint quo fuga.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 box-item">
+                    <div class="box-text">
+                        <h1>GeekFen</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit nulla  recusandae sint quo fuga.</p>
+                    </div>
+                </div>
             </div>
         </article>
 <!--/Portfolio-->
@@ -182,7 +228,7 @@
                 </div>
                 </li>
                 <li class="timeline-inverted">
-                <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                <div class="timeline-badge"><i class="glyphicon glyphicon-credit-card"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                     <h4 class="timeline-title">Mussum ipsum cacilds</h4>
@@ -194,7 +240,7 @@
                 </div>
                 </li>
                 <li>
-                <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+                <div class="timeline-badge"><i class="glyphicon glyphicon-credit-card"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                     <h4 class="timeline-title">Mussum ipsum cacilds</h4>
@@ -205,7 +251,7 @@
                 </div>
                
                 <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                     <h4 class="timeline-title">Mussum ipsum cacilds</h4>
@@ -219,21 +265,37 @@
             </div>
         </div>
 <!--/Timeline-->
+
+
+
 <!--HireMe-->
     <div class="container box" id="hire">
         <h1 class="box_title center">HireMe</h1>
         <div class="row hire_fix">
             <div class="col-12 col-sm-6 hire center">
-                <a href="#"><img src="img/upwork-logo.svg" alt="UpWork"></a>
+                <a href="#"><img src="img/upwork-logo.svg" alt=""></a> <!-- image  -->
             </div>
             <div class="col-12 col-sm-6 hire center">
-                <a href="#"><img src="img/Freelancer Logo.svg" alt="Freelancer"></a>
+                <a href="#"><img src="img/Freelancer Logo.svg" alt=""></a> <!-- image -->
             </div> 
-          
-        </div>
-        
+        </div>        
     </div>
 <!--/HireMe-->
+
+<!--Contact-->
+    <div class="col-12 box container" id="contact">
+        <div class="row plus_box_fix">
+            <div class="col-12">
+                <h1 class="box_title center">Contact Me</h1>
+            </div>
+            <div class="col contact plus_box"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            <div class="col contact plus_box"><i class="fa fa-github" aria-hidden="true"></i></div>
+            <div class="col contact plus_box"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+            <div class="col contact plus_box"><i class="fa fa-skype" aria-hidden="true"></i></div>                  
+        </div>
+    </div> 
+<!--/Contact-->
+
 <!--ContactForm-->
  
             <div id="section">
@@ -276,21 +338,37 @@
 				  </form>
 				</section>
 
-</div>
+            </div>
      
 <!--/ContactForm-->
+
+
+
+<!--Footer-->
         <footer>
             <span>
                 Copyright@2017
             </span>
         </footer>
-    </mian>
+<!--/Footer-->
 
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    </mian>
+<!-- /Main template block -->
+
+
+
+    <!-- Bootstrap v4 -->
+<script src="js/jquery-3.1.1.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+    <!-- OwlCarousel -->
 <script src="js/owl.carousel.min.js"></script>
+    <!-- Main template script -->
 <script src="js/main.js"></script>
+    <!-- Custom template script(can be change) -->
+<script src="js/custom.js"></script>
   </body>
 </html>
