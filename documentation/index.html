@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>GeekFen | Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;GeekFen&rdquo; Documentation by &ldquo;E.Fenko&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;GeekFen&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 07/16/2017<br>
+					By: Eugene Fenko<br>
+					Email: <a href="mailto:softoverlordos@gmail.com">softoverlordos@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/USERNAME">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<li><a href="#type">Types of template</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a responsive layout with Bootstrap v4. All of the information within the main content area is nested within a div`s. The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/head0.PNG" alt="HTML Structure" />
+		<img src="assets/images/body_str.PNG" alt="Body Structure">
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+		<p>For example, in custom.css:</p>
+		<img src="assets/images/header.PNG" alt="Header">
+
+<pre>	#text_logo {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	#text_logo h3 {
+		color: #someColor !important;
+	} 
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours or use "!important".</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using six CSS files in this theme. </p>
+		<ol>
+
+			<li><b>style.css - main template stylesheet</b></li>
+			
+			<li><i>bootstrap.min.css - Bootstrap v4</i></li>
+			<li><i>font-awesome.min.css - Font-Awesome stylesheet</i></li>
+			<li><i>owl.carousel.css - main owl carousel stylesheet</i></li>
+			<li><i>owl.theme.default.min.css - owl carousel stylesheet</i></li>
+			
+			<li><b>custom.css</b> - custom style <b>(for You edit)</b></li>
+		</ol>		
+		<p><b>style.css</b> is separated into sections using:</p>  
+
+<pre>	/* === Header === */
+
+	some code
+
+	/* === AboutMe === */
+	
+	some code
+	
+	/* === MySkills === */
+	
+	some code
+	.
+	.
+	.
+	/* === Footer === */
+	
+	some code
+	
+	etc, etc. 
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+		<p>If you want to change the background image in the header, follow these steps:</p>
+		<p>For example in <b>custom.css</b>:</p>
+<pre>	header {
+    		background: url("#someImage") <b>!important</b>;
+	}
+</pre>
+		<h3>Add to portfolio:</h3>   <p>in <b>index.html</b></p>
+		<img src="assets/images/portHtml.PNG" alt="html">
+		<p>in <b>custom.css</b></p>
+		<img src="assets/images/portCss.PNG" alt="css">
+		<p><b>Profit!</b></p><br>		
+		<h3>Add to skill:</h3>  <p>in <b>index.html</b></p>
+		<img src="assets/images/skillHtml.PNG" alt="html">
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three Javascript files.</p>
+		
+		<ol>
+			<b><li>main.js - main template script</li></b>
+			<i><li>jquery.min.js - jQuery</li>
+			<li>jquery-3.1.1.slim.min.js - jQuery for Bootstrap v4</li>
+			<li>bootstrap.min.js - Bootstrap v4</li>
+			<li>tether.min.js - plugin for Bootstrap v4</li>
+			<li>owl.carousel.js - owl-carousel</li>
+			<li>owl.carousel.min.js - owl-carousel minimized</li></i>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>Owl Carousel is a touch-enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</li>
+			<li>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.</li>
+			<br>
+			<li>
+				To edit the Owl-carousel follow these steps: <br> in <b>main.js</b>
+				<pre>
+// OwlCarousel
+$('.owl-carousel').owlCarousel({
+	loop:true, //false - off or true - on
+	dots:false,
+	responsive:{
+		0:{
+			items:2, //if width > 0px show 2 items on slider 
+		}
+	}
+})
+
+				</pre>
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>D) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li>Images from <b>Pexel.com</b></li>
+			<li>Icon from <b>Font-Awesome</b></li>
+			<li>Pattern texttures from <b>toptal.com</b> </li>
+			<li>Free font in <b>Google Fonts</b></li>
+			<li>Plugin Owl-carousel from <b>owlcarousel2.github.io/OwlCarousel2/</b></li>
+			<li>Bootstrap Framework from <b>v4-alpha.getbootstrap.com</b></li>
+		</ul>
+		
+		<hr>
+
+		<h3 id="credits"><strong>E) Type of template</strong> - <a href="#toc">top</a></h3>
+		
+		<p>There are such types of template:
+		
+		<ul>
+			<li><b>index.html</b> - default template with a picture on the background of the header;</li>
+			<li><b>VideoBackground.html</b> - template with a video on the background of the header;</li>
+			<li><b>YouTubeBackground.html</b> - template with a video from YouTube on the background of the header;</li>
+		</ul>
+		<p>To apply the correct type of theme, rename the corresponding file in "index.html".</p>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Eugene Fenko</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

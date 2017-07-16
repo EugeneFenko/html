@@ -1,7 +1,14 @@
+header {
+    background: #888 url("../img/bg-min.jpeg") no-repeat top;
+    background-size: cover;
+}
+
+/* Portfolio Items */
+
 #p-1 {
     background-image: url("../portfolio/man-coffee-cup-pen.jpg");
     background-size: cover;
-    /* background-position: center; */
+    background-position: center; 
 }
 
 #p-2 {
