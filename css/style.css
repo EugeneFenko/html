@@ -194,7 +194,7 @@ header {
 .box {
     padding: 50px 0;
 }
-.box-item {
+/* .box-item {
     float: left;
     position: relative;
     max-width: 30% !important;
@@ -203,7 +203,14 @@ header {
     background: #888 url("../img/placeholder.png") no-repeat center left ;
     background-size: cover;
     overflow: hidden;
+} */
+
+.box-item {
+    height: 300px;
+    min-height: 200px;
+    max-height: 300px;
 }
+
 
 .box-text {
     position: absolute;
@@ -222,12 +229,16 @@ header {
 }
 
 .box-item:hover .box-text{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 1s;
 }
 
 @media (min-width: 1200px) {
     .box-text {
-        padding: 10px 0;
+        padding: 10px;
     }
 }
 
@@ -236,22 +247,21 @@ header {
         line-height: 300%;
         font-size: larger;
   }
-    .box-text p {
-        display: none;
-    } 
+  .box-text {
+        top:0;
+    }
 }
 
 @media (max-width: 425px) {
 
-  .box-text {
-    top:0;
+    .box-item{
+        min-width: 100%;
     }
-
     .box-text h1 {
         line-height: 300%;
         font-size: larger;
         padding-top: 25%;
-  }
+    }
 }
 
 /*3.5.Partner*/
@@ -426,18 +436,9 @@ header {
     .timeline-body > p + p {
         margin-top: 5px;
     }
-
-@media (max-width: 475px) {
-    .box-text h3 {
-        font-size: 1rem;
-        margin-top: 40% !important;
-    }
-}    
+   
 
 @media (max-width: 767px) {
-    .box-text h3 {
-        margin-top: 15%;
-    }
 
     ul.timeline:before {
         left: 40px;
