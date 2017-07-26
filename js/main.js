@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
 	// OwlCarousel
@@ -119,4 +121,13 @@ $(window).scroll(function() {
         $('.navbar').removeClass('FixNav');
         $('#about').css('margin-top',"0px");
     }
+});
+
+$(document).ready(function() {
+    var page = $('#main-wrap');    
+    $(window).mousewheel(function(event, delta, deltaX, deltaY){
+        if (delta < 0) page.scrollTop(page.scrollTop() + 65);
+        else if (delta > 0) page.scrollTop(page.scrollTop() - 65);
+        return false;
+    })
 });
