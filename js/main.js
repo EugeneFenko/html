@@ -106,3 +106,17 @@ $(document).ready(function () {
     });
  
 });
+
+
+$(window).scroll(function() {
+    var full = $("#header").outerHeight(); 
+    var the_top = $(document).scrollTop();
+    if (the_top > full) {
+        $('.navbar').addClass('FixNav');
+        $('#about').css('margin-top',"56px");
+    }
+    else {
+        $('.navbar').removeClass('FixNav');
+        $('#about').css('margin-top',"0px");
+    }
+});
