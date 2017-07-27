@@ -201,21 +201,12 @@ header {
 .box {
     padding: 50px 0;
 }
-/* .box-item {
-    float: left;
-    position: relative;
-    max-width: 30% !important;
-    padding-bottom: 30%;
-    margin: 1.66%;
-    background: #888 url("../img/placeholder.png") no-repeat center left ;
-    background-size: cover;
-    overflow: hidden;
-} */
 
 .box-item {
     height: 300px;
     min-height: 200px;
     max-height: 300px;
+    overflow: hidden;
 }
 
 
@@ -225,9 +216,11 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    display: none;
+    display: flex;
     background: rgba(0, 0, 0, 0.8);
     color: white;
+    transform: translateY(100%);
+    
 }
 
 .box-text p {
@@ -236,11 +229,12 @@ header {
 }
 
 .box-item:hover .box-text{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition-delay: 1s;
+    transition: .5s;
+    display: flex;
+    transform: translateY(0%);
 }
 
 @media (min-width: 1200px) {
