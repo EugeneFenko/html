@@ -42,5 +42,6 @@ body {
 
 .container {
     padding: 20px 0 80px;
+    min-height: calc(100% - 70px);
 }
 
