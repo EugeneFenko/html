@@ -111,6 +111,7 @@ header {
 
 .navbar {
     z-index: 20;
+    background: rgba(240, 240, 240, 0.8);
 }
 
 .navbar-nav a.active {
